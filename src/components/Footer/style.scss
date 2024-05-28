@@ -1,0 +1,18 @@
+.footer {
+    padding: 2rem;
+    width: 100%;
+    background-image: var(--color-navbar-day);
+  }
+  
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+  
+  .footer-link a {
+    color: white;
+    font-size: var(--font-size-small);
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,59 @@
+.crypto-cell {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 6.5% 10% 15.5% 10% 11% 16% 18%;  
+  justify-items: flex-start;
+  align-items: center;
+  list-style: none;
+  margin-top: 2rem;
+  &__item {
+    color: black;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    border-radius: 5px;
+    width: 10rem;
+    font-size: var(--font-size-small);
+    z-index: 0;
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    button:active {
+      outline: none;
+    }
+    i {
+      margin-left: 0.4rem;
+      display: inline-block;
+    }
+  }
+  &__item:active {
+    color: var(--yellow);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .crypto-cell {
+    padding: 0;
+    grid-template-columns: 7.5% 15% 16% 42% 1% 10%;
+
+    &__item {
+      width: 9rem;
+      box-shadow: none;
+      font-size: var(--font-size-verysmall);
+      button {
+        font-size: var(--font-size-verysmall);
+      }
+    }
+    label {
+      font-size: var(--font-size-verysmall);
+    }
+  }
+  .hide-mobile {
+    display: none;
+  }
+}

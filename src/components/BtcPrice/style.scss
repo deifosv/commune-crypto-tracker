@@ -1,0 +1,17 @@
+.btc-price {
+  height: 5rem;
+  margin-top: 1rem;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    font-size: var(--font-size-small);
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .btc-price {
+    margin: 1rem 4rem;
+  }
+}

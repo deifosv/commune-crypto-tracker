@@ -1,0 +1,32 @@
+.crypto-banner {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0 0 0;
+  h2 {
+    color: var(--primary);
+  }
+}
+.crypto-container {
+  padding: 0;
+  width: 100%;
+  padding: 3rem 0;
+  padding-bottom: 2rem;
+  thead {
+    position: sticky;
+    top: 89%;
+    left: 0%;
+    margin-bottom: 6rem;
+    width: 100vw;
+  }
+  tbody {
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .crypto-container {
+    overflow-x: scroll;
+  thead {
+    top: 5%;
+  }
+  }
+}

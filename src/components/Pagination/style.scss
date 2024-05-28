@@ -1,0 +1,34 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  h4 {
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  &__item {
+    list-style: none;
+    margin: 0.05rem;
+  }
+  &__btn {
+    color: var(--primary);
+    padding: 0.3rem;
+    width: 3rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background: transparent;
+    border: 3px solid var(--primary);
+  }
+  .pagination_selected {
+    background-color: red;
+  }
+}

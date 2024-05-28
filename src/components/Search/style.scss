@@ -1,0 +1,37 @@
+.search-form {
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    width: 36vw;
+    padding: 0.9rem;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Lato';
+    border: 1px solid gray;
+    background-color: white;
+  }
+
+  input[type="text"] {
+    background: url("../../imgs/search-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 5% auto;
+    background-position: 96.5% 50%;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-form {
+    input {
+      padding: 1rem;
+      font-size: 8px;
+      width: 46vw;
+    }
+  }
+}

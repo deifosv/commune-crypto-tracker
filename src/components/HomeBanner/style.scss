@@ -1,0 +1,99 @@
+.homebanner {
+  text-align: center;
+  padding: 12rem 2rem;
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  color: var(--color-secondary-dark);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.7;
+  position: relative;
+  width: 100vw;
+  
+  &__wrapper {
+    margin-top: -2rem;
+  }
+  img {
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    width: 19%;
+  }
+  &__title {
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    font-size: var(--font-size-big);
+    text-shadow: 0 0.5rem 0.4rem rgba(21, 31, 165, 0.1);
+  }
+  &__subtitle {
+    font-size: var(--font-size-medium);
+    text-shadow: 0 0.5rem 0.4rem rgba(153, 143, 143, 0.1);
+    margin-top: 1rem;
+  }
+  &__btn-explore {
+    margin-top: 2.6rem;
+    padding: 1.3rem;
+    border: none;
+    color: white;
+    background-color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 12rem;
+  }
+  &__btn-explore:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-0.1rem);
+  }
+  &__btn-explore a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.banner-light {
+  background-image: linear-gradient(
+      to right,
+      rgba(243, 233, 233, 0.8) 0%,
+      rgba(247, 236, 236, 0.9) 100%
+    ),
+    url('https://images.pexels.com/photos/6478886/pexels-photo-6478886.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: top;
+}
+.banner-dark {
+  background-image: linear-gradient(
+        to right,
+        rgba(39, 37, 37, 0.8) 0%,
+        rgba(41, 36, 36, 0.9) 100%
+      ),
+      url('https://images.pexels.com/photos/6478886/pexels-photo-6478886.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: top;
+}
+@media screen and (max-width: 768px) {
+  .Header {
+    padding: 20rem 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .homebanner {
+    &__title {
+      margin-top: 7rem;
+    }
+  }
+  .Header {
+    padding: 20em 1em;
+    height: 100vh;
+  }
+
+  .crypto-header-img {
+    top: 10%;
+    right: 2%;
+    width: 50%;
+  }
+}

@@ -1,0 +1,56 @@
+
+.top-performers {
+    padding: 12rem 2rem 1rem 2rem;
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            margin: 1rem -0.6rem;
+            padding: .7rem;
+            border-radius: 0 5px 0 0;
+            width: 12rem;
+            background-color: var(--primary);
+            border: none;
+            color: white;
+            cursor: pointer;
+            :active {
+                outline: none;
+            }
+        }
+    }
+    h3 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    &__header {
+      font-size: var(--font-size-medium);
+      text-align: center;
+      margin-top: 2rem;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-top: 2rem;
+      padding: 1rem 3rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .top-performers {
+      &__btn-wrapper {
+        button {
+          width: 19rem;
+        }
+      }
+      &__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 1rem;
+        padding: 1rem 1rem;
+      }
+
+    }
+  
+
+  }
