@@ -1,8 +1,8 @@
-# Crypto Lite
+# Crypto Tracker
 
 ![Main](./public/readme-imgs/crypto-lite-main.JPG)
 
-Crypto Lite displays real market data from CryptoCompare's APIs: it features market and historical data, a cryptocurrency converter, a watchlist cart where to add your favorite crypto, cryptocurrency wallets data, and exchanges, together with live news and a theme switch.
+Crypto Tracker displays real market data from CryptoCompare's APIs: it features market and historical data, a cryptocurrency converter, a watchlist cart where to add your favorite crypto, cryptocurrency wallets data, and exchanges, together with live news and a theme switch.
 
 # Table of contents:
 
@@ -21,6 +21,7 @@ Crypto Lite displays real market data from CryptoCompare's APIs: it features mar
 - [Deployment](#deployment)
 
 # Tech Stack Used
+
 - TypeScript
 - React Js
 - Redux
@@ -91,13 +92,12 @@ The whole application uses a theme switch functionality created with Context API
 
 ## Deployment
 
-The app is deployed on Netlify and the demo can be found at the following link: https://crypto-lite-tracker.netlify.app/
+The app is deployed on Netlify and the demo can be found at the following link:
 
 ## Improvements
+
 The app has some improvements to be made
+
 - Convert epoch time values in charts to timestamp values
 - Improve responsivness
-- CryptoCompare only provides data such as price, market cap, current supply, percentage change for the top 100 cryptocurrencies. In the future, I will work with different crypto APIs in order to provide more market data about all cryptocurrencies.  
-
-
-
+- CryptoCompare only provides data such as price, market cap, current supply, percentage change for the top 100 cryptocurrencies. In the future, I will work with different crypto APIs in order to provide more market data about all cryptocurrencies.
